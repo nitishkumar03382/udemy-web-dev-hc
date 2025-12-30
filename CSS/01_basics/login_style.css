@@ -1,0 +1,30 @@
+body{
+    background-color: #222121;
+    color: whitesmoke;
+}
+#login-container{
+    border: 3px solid rgb(202, 196, 207);
+    padding: 10px;
+    text-align: center;
+    margin: 0 40px
+}
+#login-container:hover{
+    background-color: rgb(35, 30, 30);
+}
+form > label{
+    display: block;
+    margin: 10px;
+}
+#login-btn{
+    font-size: larger;
+    background-color: blue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    color:whitesmoke;
+    box-shadow: #222121;
+}
+#login-btn:hover{
+    background-color: darkblue;
+    
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav1{
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+.nav1 li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    padding: 14px 16px;
+    text-align: center;
+    color: rgb(160, 41, 41);
+}
+.nav1 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav1 li a:hover{
+   text-decoration: underline;
+   
+}

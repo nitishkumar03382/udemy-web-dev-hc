@@ -1,0 +1,65 @@
+body,html{
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.container{
+    /* background: linear-gradient(135deg, #1a1a1a, #2f2f2f); */
+    background-image: url("../images/wave.svg");
+    background-color: #333;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 400px;
+}
+.logo{
+    width: 150px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="email"]{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+button:hover{
+    background: #00e600;
+}
