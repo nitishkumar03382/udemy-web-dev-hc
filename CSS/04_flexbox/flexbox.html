@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Masterclass</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 2px solid black;
+            margin-bottom: 10px;
+            background-color: aquamarine;
+            padding: 5px;
+            
+        }
+        h1{
+            font-size: 24px;
+            color: rgb(57, 43, 43);
+            text-decoration: underline;
+        }
+        h1::after{
+            content: ":-";
+        }
+        .flex-container{
+            display: flex;
+            height: 200px;
+        }
+        .flex-item{
+            width: 45px;
+            height: 45px;
+            background-color: bisque;
+            margin: 8px;
+            display: block;
+            text-align: center;
+            
+        }
+        .pastle-1{
+            background-color: blue;
+        }
+        .pastle-2{
+            background-color: brown;
+        }
+        .pastle-3{
+            background-color: chartreuse;
+        }
+        .pastle-4{
+            background-color: darkcyan;
+        }
+        .pastle-5{
+            background-color: #a89ecb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flex Row</h1>
+        <div class="flex-container"
+        style="flex-direction: row;">
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Flex Column</h1>
+        <div class="flex-container"
+             style="flex-direction: column;">
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Justify Content(MAin-axis)</h1>
+        <div class="flex-container"
+             style="justify-content: space-between;">
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Align Items(Other-axis)</h1>
+        <div class="flex-container"
+             style=" align-items: end;">
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>flex wrap</h1>
+        <div class="flex-container"
+             style="flex-wrap: wrap; flex-direction: column;">
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+            <div class = "flex-item pastle-1">1</div>
+            <div class = "flex-item pastle-2">2</div>
+            <div class = "flex-item pastle-3">3</div>
+            <div class = "flex-item pastle-4">4</div>
+            <div class = "flex-item pastle-5">5</div>
+        </div>
+    </div>
+    
+</body>
+</html>
