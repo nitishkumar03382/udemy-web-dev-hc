@@ -1,0 +1,89 @@
+<!-- BG: As you wish
+ Design a card: Image, Title, Subtitle(Description), Buy Now, Add to Cart -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background: linear-gradient(95deg, #0c4646, #361945); */
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            padding: 10px;
+            display: grid;
+            width: fit-content;
+            /* justify-content: center; */
+            align-items: center;
+            height: 400px;
+            margin: 80px auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 100px 100px;
+            box-shadow: 3px 2px 5px gray;
+            border-radius: 3px;
+            background: linear-gradient(180deg, rgb(255, 255, 255), rgb(165, 243, 190))
+            
+        }
+        .prod-image{
+            text-align: center;
+            /* box-shadow: 5px 3px 10px gray; */
+        }
+        img{
+            /* box-shadow: 3px 2px 5px green; */
+        }
+        .prod-detail{
+            text-align: center;
+        }
+        .purchase-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: #4328da;
+            border: none;
+            color: whitesmoke;
+            font-size: larger;
+            margin: 3px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        button:hover{
+            background-color: blue;
+            box-shadow: 3px 3px 8px rgb(118, 216, 145);
+        }
+        h1{
+            font-family: cursive;
+            color: rgb(20, 216, 79);
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="card">
+        <div class="prod-image">
+            <img src="elegant-indoor-palm-tree-modern-pot.png" alt="Plant" width="270px" height="175px">
+        </div>
+        <div class="prod-detail">
+            <h1>Palm Plant</h1>
+            <p>Decorate your home with this beautiful plant.</p>
+        </div>
+        <div class="purchase-btn">
+            <button>Buy Now</button>
+            <button
+            style="background-color: rgb(1, 143, 1);"
+            >Add to cart</button>
+        </div>
+    </div>
+ </body>
+ </html>
